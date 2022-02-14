@@ -57,7 +57,7 @@ passport.deserializeUser(function(id, done) {
 // Configuration for logging in and/or signing up with Google
 
 passport.use(new GoogleStrategy({
-  clientId: process.env.CLIENT_ID,
+  clientID: process.env.CLIENT_ID,
   clientSecret: process.env.CLIENT_SECRET,
   callbackURL: process.env.GOOGLE_AUTHCALLBACK,
   userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo"
